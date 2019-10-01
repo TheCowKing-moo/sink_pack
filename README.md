@@ -27,7 +27,7 @@ TODO
     *Potential spawn prefab
 
   * Community Poll
-    * Balance
+    * Balance eg: should the cloche be tweaked/disabled
     * Mods to Add/Remove
     * oregen style
   
