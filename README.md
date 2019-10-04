@@ -63,10 +63,18 @@ TODO
     * Balance eg: should the cloche be tweaked/disabled
     * Mods to Add/Remove
     * oregen style
-    
+  
+  * Mod Interaction Ideas
+   * Using something like Thaumcraft infusion to make ember a renewable resource
+ 
+  
   * Mod Configs
    * Quark
    * Charm
+  
+  
+  * Mod Additions / Deletions
+   * Add Ore Stone Variants and Configure - https://www.curseforge.com/minecraft/mc-mods/ore-stone-variants
   
   * Ore Dimension Solution
   
@@ -90,3 +98,12 @@ TODO
     * ~~obsdian + cyan dye = Skystone~~
     * ~~Rustic Slates --> Earthworks Slate~~
 
+
+
+ Balance Ideas
+ * Remove Mekansim Energy Upgrade
+ * Make Steel require a blast furnace / late game machines (staple TPPI config)
+ * Lower barrier of entry for things like IE mining drill
+ * Lower RF production of passive generators
+ * Make automated mining machines / quarries more expensive
+ * Make IE Cloche take much more RF
