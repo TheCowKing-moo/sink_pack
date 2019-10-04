@@ -166,7 +166,9 @@
       "enable": true,
       "frozenLiquid": {
         "block": "minecraft:ice",
-        "properties": {}
+        "properties": {
+          "natural": "true"
+        }
       },
       "grassBorderWith": {
         "block": "minecraft:grass",
