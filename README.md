@@ -3,37 +3,37 @@
 TODO
 
   * Unify Oregen to Thermal Foundation
-   * ~~Alum~~
-   * ~~Copper~~
-   * ~~Iron~~
-   * ~~Gold~~
-   * ~~Silver~~
-   * ~~Lead~~
-   * ~~Osmium~~
-   * ~~Certus / Charged Certus~~
-   * ~~Redstone~~
-   * ~~Quartz~~
-   * ~~Black Quartz~~
-   * ~~Apatite~~
-   * ~~Tin~~
-   * Salt
-   * Chalk
-   * Deep Resonanace Ore
-   * ~~Sapphire~~
-   * ~~Ruby~~
-   * Pyrite
-   * ~~Amber~~
-   * ~~Cinnibar~~
-   * ~~Iridium~~
-   * ~~Platinum~~
-   * ~~Emerald~~
-   * Sulfur
-   * ~~Throium~~
-   * ~~Boron~~
-   * ~~Lithium~~
-   * ~~Magnesium~~
-   * ~~Uranium~~
-   * Any of TR's nether or end ores
+    * ~~Alum~~
+    * ~~Copper~~
+    * ~~Iron~~
+    * ~~Gold~~
+    * ~~Silver~~
+    * ~~Lead~~
+    * ~~Osmium~~
+    * ~~Certus / Charged Certus~~
+    * ~~Redstone~~
+    * ~~Quartz~~
+    * ~~Black Quartz~~
+    * ~~Apatite~~
+    * ~~Tin~~
+    * Salt
+    * Chalk
+    * Deep Resonanace Ore
+    * ~~Sapphire~~
+    * ~~Ruby~~
+    * Pyrite
+    * ~~Amber~~
+    * ~~Cinnibar~~
+    * ~~Iridium~~
+    * ~~Platinum~~
+    * ~~Emerald~~
+    * Sulfur
+    * ~~Throium~~
+    * ~~Boron~~
+    * ~~Lithium~~
+    * ~~Magnesium~~
+    * ~~Uranium~~
+    * Any of TR's nether or end ores
    
   
   * Tweak more fun worldgen features eg: granite boulders / sky stone spikes
