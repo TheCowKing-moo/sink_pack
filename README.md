@@ -11,6 +11,8 @@ TODO
   * Unify Stonegen
     * ~~Chisel Marble only worldgen - genn'd by Thermal~~
     * ~~Chisel Limestone only - genn'd by Thermal~~
+    * Salt gen
+    * Chalk gen?
 
   * No mobs on surface
     * alternative way of getting enderpearls
