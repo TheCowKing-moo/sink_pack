@@ -2,7 +2,39 @@
 
 TODO
 
-  * ~~Unify Oregen to Thermal Foundation~~
+  * Unify Oregen to Thermal Foundation
+   * ~~Alum~~
+   * ~~Copper~~
+   * ~~Iron~~
+   * ~~Gold~~
+   * ~~Silver~~
+   * ~~Lead~~
+   * ~~Osmium~~
+   * ~~Certus / Charged Certus~~
+   * ~~Redstone~~
+   * ~~Quartz~~
+   * ~~Black Quartz~~
+   * ~~Apatite~~
+   * ~~Tin~~
+   * Salt
+   * Chalk
+   * Deep Resonanace Ore
+   * ~~Sapphire~~
+   * ~~Ruby~~
+   * Pyrite
+   * ~~Amber~~
+   * ~~Cinnibar~~
+   * ~~Iridium~~
+   * ~~Platinum~~
+   * ~~Emerald~~
+   * Sulfur
+   * ~~Throium~~
+   * ~~Boron~~
+   * ~~Lithium~~
+   * ~~Magnesium~~
+   * ~~Uranium~~
+   * Any of TR's nether or end ores
+   
   
   * Tweak more fun worldgen features eg: granite boulders / sky stone spikes
   
@@ -11,8 +43,6 @@ TODO
   * Unify Stonegen
     * ~~Chisel Marble only worldgen - genn'd by Thermal~~
     * ~~Chisel Limestone only - genn'd by Thermal~~
-    * Salt gen
-    * Chalk gen?
 
   * No mobs on surface
     * alternative way of getting enderpearls
@@ -59,6 +89,4 @@ TODO
     * ~~BOP dirts --> sand~~
     * ~~obsdian + cyan dye = Skystone~~
     * ~~Rustic Slates --> Earthworks Slate~~
-    * Salt
-    * Earthworks Chalk
-  
+
