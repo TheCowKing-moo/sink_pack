@@ -68,8 +68,10 @@
 	 "mysticalworld:aubergine_seed": "2*minecraft:emerald",
 	 "actuallyadditions:item_coffee_seed": "2*minecraft:emerald",
 	 "actuallyadditions:item_canola_seed": "2*minecraft:emerald",
-	 "actuallyadditions:item_flax_seed": "9*minecraft:emerald",
+	 "actuallyadditions:item_flax_seed": "2*minecraft:emerald",
+	 "techreborn:rubber_sapling": "2*minecraft:emerald",
 	 "immersiveengineering:seed": "2*minecraft:emerald"
+	 
 
 	
   }

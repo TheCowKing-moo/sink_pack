@@ -5,7 +5,7 @@
 			"distribution": "uniform",
 			"generator": {
 				"block": {
-							"nuclearcraft:ore",
+							"name": "nuclearcraft:ore",
 							"metadata": 5,
 							"weight": 100
 							},	

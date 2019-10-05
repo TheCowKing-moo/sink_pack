@@ -15,6 +15,11 @@ import mods.mekanism.crusher;
 
   var dirt as IIngredient = <minecraft:dirt>;
   var sand as IIngredient = <minecraft:sand>;
+  var slate = <rustic:slate>;
+  var clay = <minecraft:clay_ball>;
+  
+  
+
   
   var dirtCrush as IIngredient[] = [
     <biomesoplenty:dirt:9>,    //Coarse Sandy Dirt
@@ -43,3 +48,14 @@ import mods.mekanism.crusher;
 	
 	i = i + 1;
   }  //end crush
+  
+  
+  crushIt( clay, slate, clay );
+  
+  
+  function crushIt( output as IIngredient, input as IIngredient, secondary as IIngredient ) as void  {
+        mods.immersiveengineering.Crusher.addRecipe(output.items[0], input, 2048, secondary.items[0], 1.0 );
+		mods.thermalexpansion.Pulverizer.addRecipe(output.items[0], input.items[0], 2048, secondary.items[0], 50);
+		mods.enderio.SagMill.addRecipe( [output.items[0], input.items[0] ], [100, 100], secondary );
+		mods.mekanism.crusher.addRecipe( input, output.items[0] );
+  }

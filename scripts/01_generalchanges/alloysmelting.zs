@@ -14,6 +14,13 @@ addToAlloySmelt( <appliedenergistics2:sky_stone_block>, <minecraft:obsidian>, <o
 addToAlloySmelt( <railcraft:generic:8>, <ore:stone>, <ore:dyeBlack> );
 ## Quarried Stone
 addToAlloySmelt( <railcraft:generic:9>, <ore:stone>, <ore:dyeWhite> );
+#Jaspers
+addToAlloySmelt( <quark:jasper>, <ore:stone>, <ore:dyeRed> );
+#Brimstone
+addToAlloySmelt( <quark:biome_cobblestone>, <minecraft:netherrack>, <ore:dustSulfur> );
+#Permafrost
+addToAlloySmelt( <quark:biome_cobblestone:1>, <ore:stone>, <minecraft:ice> );
+
 
 
 function addToAlloySmelt( output as IIngredient, input1 as IIngredient, input2 as IIngredient ) as void  {
@@ -22,7 +29,7 @@ function addToAlloySmelt( output as IIngredient, input1 as IIngredient, input2 a
 	var defaulttick as int = 20;
 
 	##mods.thermalexpansion.InductionSmelter.addRecipe(IItemStack primaryOutput, IItemStack primaryInput, IItemStack secondaryInput, int energy, @Optional IItemStack secondaryOutput
-	mods.thermalexpansion.InductionSmelter.addRecipe(output.items[0], input1.items[0], input1.items[0], defaultpower );
+	mods.thermalexpansion.InductionSmelter.addRecipe(output.items[0], input1.items[0], input2.items[0], defaultpower );
 	
 	##mods.techreborn.alloySmelter.addRecipe(IItemStack output, IIngredient input1, IIngredient input2, int ticktime, int euTick)
 	mods.techreborn.alloySmelter.addRecipe( output.items[0], input1, input2, defaulttick, defaultpower / 4);

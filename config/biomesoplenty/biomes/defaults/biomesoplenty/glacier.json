@@ -20,9 +20,7 @@
   "averageHeight": 88.0,
   "topBlock": {
     "block": "minecraft:ice",
-    "properties": {
-      "natural": "true"
-    }
+    "properties": {}
   },
   "fogColor": -1,
   "canGenerateVillages": false,
