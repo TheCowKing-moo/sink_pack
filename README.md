@@ -59,7 +59,7 @@ TODO
   * PREFAB
     * Potential spawn prefab
 
-  * Community Poll
+  * ~~Community Poll 
     * Balance eg: should the cloche be tweaked/disabled
     * Mods to Add/Remove
     * oregen style
@@ -70,7 +70,7 @@ TODO
   
   * Mod Configs
    * Quark
-   * Charm
+   * ~~Charm
   
   
   * Mod Additions / Deletions
