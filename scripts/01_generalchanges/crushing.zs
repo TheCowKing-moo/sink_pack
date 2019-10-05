@@ -17,8 +17,12 @@ import mods.mekanism.crusher;
   var sand as IIngredient = <minecraft:sand>;
   var slate = <rustic:slate>;
   var clay = <minecraft:clay_ball>;
+  var oreLimestone = <ore:stoneLimestone>;
+  var chalkDust = <earthworks:item_chalk>;
+  var salt = <mekanism:salt>;
+  var smallsaltpeter = <techreborn:smalldust:44>;
   
-  
+
 
   
   var dirtCrush as IIngredient[] = [
@@ -51,6 +55,9 @@ import mods.mekanism.crusher;
   
   
   crushIt( clay, slate, clay );
+  crushIt( chalkDust, oreLimestone, chalkDust );
+  crushIt( smallsaltpeter, salt, smallsaltpeter );
+
   
   
   function crushIt( output as IIngredient, input as IIngredient, secondary as IIngredient ) as void  {
