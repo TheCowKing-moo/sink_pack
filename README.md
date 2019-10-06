@@ -2,7 +2,7 @@
 
 TODO
 
-  * Unify Oregen to Thermal Foundation
+  * Unify Oregen to Thermal Foundation and Add oreveins
     * ~~Alum~~
     * ~~Copper~~
     * ~~Iron~~
@@ -21,7 +21,7 @@ TODO
     * Deep Resonanace Ore
     * ~~Sapphire~~
     * ~~Ruby~~
-    * Pyrite
+    * ~~Pyrite~~
     * ~~Amber~~
     * ~~Cinnibar~~
     * ~~Iridium~~
@@ -62,7 +62,7 @@ TODO
   * ~~Community Poll 
     * Balance eg: should the cloche be tweaked/disabled
     * Mods to Add/Remove
-    * oregen style
+    * ~~oregen style~~
   
   * Mod Interaction Ideas
    * ~~Using something like Thaumcraft infusion to make ember a renewable resource~~
