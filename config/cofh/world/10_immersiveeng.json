@@ -10,7 +10,7 @@
 							"weight": 100
 							},	
 				"material": "minecraft:stone",
-				"cluster-size": 4
+				"cluster-size": 3
 			},
 			"cluster-count": 3,
 			"min-height": 15,

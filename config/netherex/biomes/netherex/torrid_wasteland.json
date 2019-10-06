@@ -42,12 +42,6 @@
 			"spawnWeight": 100,
 			"minimumGroupCount": 1,
 			"maximumGroupCount": 2
-		}, 
-		{
-			"entity": "natura:imp",
-			"spawnWeight": 10,
-			"minimumGroupCount": 8,
-			"maximumGroupCount": 12
 		}
 	],
 	"traits": [
