@@ -16,8 +16,8 @@ TODO
     * ~~Black Quartz~~
     * ~~Apatite~~
     * ~~Tin~~
-    * Salt
-    * Chalk
+    * ~~Salt~~
+    * ~~Chalk~~
     * Deep Resonanace Ore
     * ~~Sapphire~~
     * ~~Ruby~~
@@ -65,7 +65,7 @@ TODO
     * oregen style
   
   * Mod Interaction Ideas
-   * Using something like Thaumcraft infusion to make ember a renewable resource
+   * ~~Using something like Thaumcraft infusion to make ember a renewable resource~~
  
   
   * Mod Configs
@@ -84,7 +84,7 @@ TODO
   * ~~Disable Natura Tree worldgen + put saplings in Market~~
   * ~~Disable Pams garden gen + put in Market~~
   * ~~Disable Menril trees + put in Market~~
-  * Disable TR rubber trees + put in Market
+  * ~~Disable TR rubber trees + put in Market~~
   * ~~Disable AA crops + put in Market~~
   * ~~Disable Rustic trees/crops + put in Market~~
   * ~~Disable RT crops~~
