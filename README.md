@@ -33,6 +33,9 @@ TODO
     * ~~Lithium~~
     * ~~Magnesium~~
     * ~~Uranium~~
+    * ~~OW Silent Gems~~
+    * Nehter Silent Gems
+    * End Silent Gems
     * Any of TR's nether or end ores
    
   
@@ -100,10 +103,8 @@ TODO
 
 
 
- Balance Ideas
- * Remove Mekansim Energy Upgrade
- * Make Steel require a blast furnace / late game machines (staple TPPI config)
- * Lower barrier of entry for things like IE mining drill
- * Lower RF production of passive generators
- * Make automated mining machines / quarries more expensive
+ Balance 
+ * ~~Make Steel require a blast furnace / late game machines (staple TPPI config)~~
+ * ~~Make automated mining machines / quarries more expensive~~
  * Make IE Cloche take much more RF
+ * 
