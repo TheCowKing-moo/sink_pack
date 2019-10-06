@@ -145,11 +145,6 @@
 								"name": "actuallyadditions:block_misc",
 								"metadata": 3,
 								"weight": 5
-							},							
-							{
-								"name": "thaumcraft:ore_quartz",
-								"metadata": 0,
-								"weight": 5
 							}
 						],
                 "material": [
@@ -191,11 +186,6 @@
 							},
 							{
 								"name": "minecraft:bone_block",
-								"metadata": 0,
-								"weight": 1
-							},
-							{
-								"name": "thaumcraft:ore_amber",
 								"metadata": 0,
 								"weight": 1
 							}
@@ -274,7 +264,6 @@
 									{"name": "minecraft:diamond_ore","metadata":0, "weight":75},
 									{"name": "techreborn:ore","metadata":2, "weight":5},
 									{"name": "techreborn:ore","metadata":3, "weight":5},
-									{"name": "thaumcraft:ore_quartz","metadata":0, "weight":5},
 									{"name": "actuallyadditions:block_misc","metadata":3, "weight":5},
 									{"name": "minecraft:coal_ore","metadata":0, "weight":5}
 								],
@@ -306,7 +295,6 @@
 									{"name": "minecraft:emerald_ore","metadata":0, "weight":75},
 									{"name": "techreborn:ore","metadata":2, "weight":5},
 									{"name": "techreborn:ore","metadata":3, "weight":5},
-									{"name": "thaumcraft:ore_quartz","metadata":0, "weight":5},
 									{"name": "actuallyadditions:block_misc","metadata":3, "weight":5},
 									{"name": "minecraft:coal_ore","metadata":0, "weight":5}
 								],
@@ -741,6 +729,43 @@
             "chunk-chance": 200,
             "min-height": 3,
             "max-height": 32,
+            "retrogen": "true",
+			"biome": "all",
+            "dimension": {
+                "restriction": "blacklist",
+                "value": [
+                    -1,
+                    1
+                ]
+            }
+        },
+		"Silentgem_Vein": {
+            "distribution": "fractal",
+            "generator": {
+                "type": "large-vein",
+                "block": [
+                    {
+                        "name": "silentgems:multi_gem_ore_classic",
+                        "metadata": 0,
+                        "weight": 85
+                    },
+					{
+						"name": "silentgems:essenceore",
+						"metadata": 0,
+						"weight": 15
+					}
+                ],
+                "material": "minecraft:stone",
+                "cluster-size": 50
+            },
+            "cluster-count": 25,
+            "chunk-chance": 200,
+            "min-height": 16,
+            "max-height": 50,
+            "vein-height": 10,
+            "vein-diameter": 10,
+            "vertical-density": 7,
+            "horizontal-density": 5,
             "retrogen": "true",
 			"biome": "all",
             "dimension": {
