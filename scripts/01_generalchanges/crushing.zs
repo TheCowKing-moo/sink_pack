@@ -6,7 +6,6 @@ import crafttweaker.oredict.IOreDictEntry;
 import mods.enderio.SagMill;
 import mods.thermalexpansion.Pulverizer;
 import mods.immersiveengineering.Crusher;
-import mods.mekanism.crusher;
 
 
   var energy = 2048;
@@ -19,7 +18,6 @@ import mods.mekanism.crusher;
   var clay = <minecraft:clay_ball>;
   var oreLimestone = <ore:stoneLimestone>;
   var chalkDust = <earthworks:item_chalk>;
-  var salt = <mekanism:salt>;
   var smallsaltpeter = <techreborn:smalldust:44>;
   
 
@@ -46,23 +44,16 @@ import mods.mekanism.crusher;
 
       //mods.enderio.SagMill.addRecipe(IItemStack[] output, float[] chances, IIngredient input, @Optional String bonusType, @Optional int energyCost, @Optional float[] xp)
       mods.enderio.SagMill.addRecipe( [ dirt.items[0], sand.items[0] ], [100, 100], dirtCrush[i] );
-
-      //mods.mekanism.crusher.addRecipe(IIngredient inputStack, IItemStack outputStack)
-      mods.mekanism.crusher.addRecipe( dirtCrush[i], dirt.items[0] );
 	
 	i = i + 1;
   }  //end crush
   
   
   crushIt( clay, slate, clay );
-  crushIt( chalkDust, oreLimestone, chalkDust );
-  crushIt( smallsaltpeter, salt, smallsaltpeter );
+  crushIt( chalkDust, oreLimestone, smallsaltpeter );
 
-  
-  
   function crushIt( output as IIngredient, input as IIngredient, secondary as IIngredient ) as void  {
         mods.immersiveengineering.Crusher.addRecipe(output.items[0], input, 2048, secondary.items[0], 1.0 );
 		mods.thermalexpansion.Pulverizer.addRecipe(output.items[0], input.items[0], 2048, secondary.items[0], 50);
 		mods.enderio.SagMill.addRecipe( [output.items[0], input.items[0] ], [100, 100], secondary );
-		mods.mekanism.crusher.addRecipe( input, output.items[0] );
   }

@@ -554,36 +554,6 @@
                 ]
             }
         },
-        "Osmium_Vein": {
-            "distribution": "uniform",
-            "generator": {
-                "block": "mekanism:oreblock",
-                "material": [
-                    {
-                        "name": "minecraft:stone",
-                        "metadata": 0
-                    },
-                    {
-                        "name": "quark:biome_cobblestone",
-                        "metadata": 1
-                    }
-                ],
-                "cluster-size": 50
-            },
-            "cluster-count": 25,
-            "chunk-chance": 175,
-            "min-height": 2,
-            "max-height": 24,
-            "retrogen": "true",
-			"biome": "all",
-            "dimension": {
-                "restriction": "blacklist",
-                "value": [
-                    -1,
-                    1
-                ]
-            }
-        },
         "Platinum_Vein": {
             "distribution": "fractal",
             "generator": {
