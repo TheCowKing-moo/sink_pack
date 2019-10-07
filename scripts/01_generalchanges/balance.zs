@@ -90,6 +90,23 @@ var locator = <rftools:locator>;
 recipes.remove(quarryCard);
 recipes.addShaped(quarryCard, [[advancedPowercell, remoteScanner, advancedPowercell],[blockSteel, shapeCard, blockSteel], [advancedPowercell, locator, advancedPowercell]]);
 
+#Mek Digital Miner 
+var logSorter = <mekanism:machineblock:15>;
+var tpCore = <mekanism:teleportationcore>;
+var atomicAlloy = <mekanism:atomicalloy>;
+var diamond = <ore:gemDiamond>;
+var circuitBasic = <ore:circuitBasic>;
+
+#Teleportation Core
+recipes.remove(tpCore);
+recipes.addShaped(tpCore, [[diamond, atomicAlloy, diamond],[ingotSteel, blockEnder, ingotSteel], [diamond, atomicAlloy, diamond]]);
+
+#Logistical Sorter
+recipes.remove(logSorter);
+recipes.addShaped(logSorter, [[ingotSteel, piston, ingotSteel],[ingotSteel, circuitBasic, ingotSteel], [ingotSteel, blockSteel, ingotSteel]]);
+
+
+
 ##================Flight
 
 #Simply Jetpacks
