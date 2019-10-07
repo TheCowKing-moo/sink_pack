@@ -15,6 +15,8 @@ mods.initialinventory.InvHandler.addStartingItem(<actuallyadditions:stone_paxel>
 
 
 
+// All Credit goes to the ATM team for anything related to the AkashicTome
+
 print(" =================== Akashic Tome =================== ");
 print(" ==================================================== ");
 /*
@@ -44,6 +46,13 @@ print(" ==================================================== ");
 					"akashictome:definedMod": "embers"
 				},
 				Damage: 0 as short
+			},
+			pneumaticcraft: {
+				id: "patchouli:guide_book",
+				Count: 1 as byte,
+				tag: {
+					"patchouli:book": "pneumaticcraft:book"
+				},
 			},
 			immersiveengineering: {
 				id: "immersiveengineering:tool",
@@ -125,6 +134,14 @@ print(" ==================================================== ");
 				},
 				Damage: 0 as short
 			},
+			roots: {
+				id: "patchouli:guide_book",
+				Count: 1 as byte,
+				tag: {
+					"patchouli:book": "roots_guide"
+				},
+				Damage: 0 as short
+			},
 			integratedtunnels: {
 				id: "integrateddynamics:on_the_dynamics_of_integration",
 				Count: 1 as byte,
@@ -198,6 +215,8 @@ print(" ==================================================== ");
 		<actuallyadditions:item_booklet>,
 		<opencomputers:tool:4>,
 		<cookingforblockheads:recipe_book:1>,
+		<patchouli:guide_book>.withTag({"patchouli:book": "roots:roots_guide"}),
+		<patchouli:guide_book>.withTag({"patchouli:book": "pneumaticcraft:book"}), 
 		<rftoolscontrol:rftoolscontrol_manual>,
 		<integrateddynamics:on_the_dynamics_of_integration>,
 		<rftools:rftools_shape_manual>,

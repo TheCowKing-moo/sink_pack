@@ -31,18 +31,6 @@
 			"maximumGroupCount": 4
 		}, 
 		{
-			"entity": "tardis:invasion_cyberman",
-			"spawnWeight": 50,
-			"minimumGroupCount": 1,
-			"maximumGroupCount": 1
-		}, 
-		{
-			"entity": "tardis:dalek",
-			"spawnWeight": 5,
-			"minimumGroupCount": 1,
-			"maximumGroupCount": 1
-		}, 
-		{
 			"entity": "minecraft:blaze",
 			"spawnWeight": 5,
 			"minimumGroupCount": 1,
