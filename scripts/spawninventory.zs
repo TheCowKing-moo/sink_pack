@@ -13,6 +13,8 @@ mods.initialinventory.InvHandler.addStartingItem(<naturescompass:naturescompass>
 //Gives Stone AIOT
 mods.initialinventory.InvHandler.addStartingItem(<actuallyadditions:stone_paxel>);
 
+//Gives a crafting table
+mods.initialinventory.InvHandler.addStartingItem(<actuallyadditions:item_crafter_on_a_stick>);
 
 
 // All Credit goes to the ATM team for anything related to the AkashicTome
