@@ -1,6 +1,6 @@
 {
   "generateTechRebornFeatures": true,
-  "generateOres": false,
+  "generateOres": true,
   "retroGenOres": false,
   "overworldOresInModdedDims": false,
   "overworldOres": [
@@ -124,7 +124,7 @@
       "veinsPerChunk": 3,
       "minYHeight": 10,
       "maxYHeight": 126,
-      "shouldSpawn": false
+      "shouldSpawn": true
     }
   ],
   "endOres": [
