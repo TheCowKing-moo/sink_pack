@@ -18,7 +18,7 @@ TODO
     * ~~Tin~~
     * ~~Salt~~
     * ~~Chalk~~
-    * Deep Resonanace Ore
+    * ~~Deep Resonanace Ore~~
     * ~~Sapphire~~
     * ~~Ruby~~
     * ~~Pyrite~~
@@ -34,7 +34,7 @@ TODO
     * ~~Magnesium~~
     * ~~Uranium~~
     * ~~OW Silent Gems~~
-    * Nehter Silent Gems
+    * ~~Nehter Silent Gems~~
     * End Silent Gems
     * Any of TR's nether or end ores
    
@@ -50,7 +50,7 @@ TODO
   * No mobs on surface
     * alternative way of getting enderpearls
     
-  * Tighten BOP + Geographicraft Configs
+  * ~~Tighten BOP + Geographicraft Configs~~
     
   * JEI settings
     * ~~Facades~~
@@ -72,14 +72,14 @@ TODO
  
   
   * Mod Configs
-   * Quark
+   * ~~Quark~~
    * ~~Charm
   
   
   * Mod Additions / Deletions
    * Add Ore Stone Variants and Configure - https://www.curseforge.com/minecraft/mc-mods/ore-stone-variants
   
-  * Ore Dimension Solution
+  * ~~Ore Dimension Solution~~
   
   QOL Changes
   * ~~AE2 Plates craftable ~~
@@ -107,4 +107,4 @@ TODO
  * ~~Make Steel require a blast furnace / late game machines (staple TPPI config)~~
  * ~~Make automated mining machines / quarries more expensive~~
  * Make IE Cloche take much more RF
- * 
+
