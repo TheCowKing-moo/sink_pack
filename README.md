@@ -114,7 +114,7 @@ TODO
             - simple use /gamestages add playername stagename to use said rule
             
  * Kitchen - Default crafting recipes
-   * script auto pulls recipes for any items being added to heavy and adds thier default recipe to kitchen
+   * ~~script auto pulls recipes for any items being added to heavy and adds thier default recipe to kitchen~~
  * Heavy - Stupid crafting recipes
    * ~~Add recipe for all machine frames~~
    * Add recipe for all automatic mining solutions
