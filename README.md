@@ -108,3 +108,26 @@ TODO
  * ~~Make automated mining machines / quarries more expensive~~
  * Make IE Cloche take much more RF
 
+
+
+ GameStages - Every stage has to have an opposite stage for those who do not want said change.
+            - simple use /gamestages add playername stagename to use said rule
+            
+ * Kitchen - Default crafting recipes
+   * script auto pulls recipes for any items being added to heavy and adds thier default recipe to kitchen
+ * Heavy - Stupid crafting recipes
+   * ~~Add recipe for all machine frames~~
+   * Add recipe for all automatic mining solutions
+   * Add recipe for all flight mechanics
+   * Add recipe for 3x3 mining mechanics
+   * Add recipe for easy item transportation - make pipes very expensive to encourage conveyor belts
+ * Flight - all flight allowed
+   * same deal as kitchen auto script
+ * Flightless - no flight allowed
+   * Make a manual list of flight mechancis and disable them
+ * Teleportation - no limits on tp
+   * same deal as kitchen auto script
+ * No Teleportation - no tp - maybe let ae2/lp through
+   * Make a manual list of teleportation mechanics and disable them
+ 
+ 
