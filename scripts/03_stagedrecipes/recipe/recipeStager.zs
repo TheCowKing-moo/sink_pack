@@ -7,10 +7,17 @@ import crafttweaker.oredict.IOreDictEntry;
 //Building Materials
 var steelCasing = <mekanism:basicblock:8>;
 var blockSteel = <ore:blockSteel>;
+var blockFluix = <appliedenergistics2:fluix_block>;
+var blockQuartz = <ore:blockQuartz>;
 var blockGlass = <ore:blockGlass>;
 var blockOsmium = <ore:blockOsmium>;
 var chestWood = <ore:chestWood>;
+var blockMenril = <integrateddynamics:crystalized_menril_block>;
+var blockRestonia = <actuallyadditions:block_crystal>;
+var blockEnderPearl = <actuallyadditions:block_misc:6>;
+var blockObsidian = <ore:obsidian>;
 var blockGold = <ore:blockGold>;
+var advancedCoil = <actuallyadditions:item_misc:8>;
 var electroCore = <mekanism:electrolyticcore>;
 var atomicAlloy = <mekanism:atomicalloy>;
 var alloyUlt = <ore:alloyUltimate>;
@@ -68,85 +75,13 @@ var shapedRecipes as IIngredient[][][][IItemStack] = {
 	<mekanism:basicblock:8> : [
 		[[blockSteel, blockGlass, blockSteel], [blockGlass, blockOsmium, blockGlass], [blockSteel, blockGlass, blockSteel]]
 	],
-	//Enrich Chamber
-	<mekanism:machineblock:0> : [
-		[[alloyBasic, circuitBasic, alloyBasic], [blockSteel, steelCasing, blockSteel], [alloyBasic, circuitBasic, alloyBasic]]
-	],
-	//Osmium Compressor
-    <mekanism:machineblock:1> : [
-		[[alloyAdvanced, circuitAdvanced, alloyAdvanced], [bucket, steelCasing, bucket], [alloyAdvanced, circuitAdvanced, alloyAdvanced]]
-	],
-	//Combiner
-	<mekanism:machineblock:2> : [
-		[[alloyElite, circuitElite, alloyElite], [cobblestone, steelCasing, cobblestone], [alloyElite, circuitElite, alloyElite]]
-	],
-	//Crusher
-	<mekanism:machineblock:3> : [
-		[[blockRedstone, circuitBasic, blockOsmium], [blockSteel, steelCasing, blockSteel], [blockOsmium, circuitBasic, blockRedstone]]
-	],
-	//Smelter
-	<mekanism:machineblock:10> : [
-		[[alloyBasic, circuitBasic, alloyBasic], [blockGlass, steelCasing, blockGlass], [alloyBasic, circuitBasic, alloyBasic]]
-	],
-	//Metallurgic Infuser
-	<mekanism:machineblock:8> : [
-		[[blockSteel, furnace, blockSteel], [blockRedstone, blockOsmium, blockRedstone], [blockSteel, furnace, blockSteel]]
-	],
-	//Purification Chamber
-	<mekanism:machineblock:9> : [
-		[[alloyAdvanced, circuitAdvanced, alloyAdvanced], [blockOsmium, steelCasing, blockOsmium], [alloyAdvanced, circuitAdvanced, alloyAdvanced]]
-	],
-	//Fluid Pump
-	<mekanism:machineblock:12> : [
-		[[circuitBasic, circuitBasic, circuitBasic], [enrichedAlloy, steelCasing, enrichedAlloy], [blockOsmium, bucket, blockOsmium]]
-	],
-	//Personal Chest
-	<mekanism:machineblock:13> : [
-		[[blockSteel, blockGlass, blockSteel], [chestWood, circuitBasic, chestWood], [blockOsmium, blockRedstone, blockOsmium]]
-	],
-	//Chemical Inj Chamber
-	<mekanism:machineblock2:3> : [
-		[[alloyElite, circuitElite, alloyElite], [blockGold, steelCasing, blockGold], [alloyElite, alloyElite, alloyElite]]
-	],
-	//Electrolytic Seperator
-	<mekanism:machineblock2:4> : [
-		[[blockSteel, blockRedstone, blockSteel], [enrichedAlloy, electroCore, enrichedAlloy], [blockOsmium, blockRedstone, blockOsmium]]
-	],
-	//Sawmill
-	<mekanism:machineblock2:5> : [
-		[[blockSteel, circuitBasic, blockSteel], [blockGold, steelCasing, blockGold], [blockSteel, circuitBasic, blockSteel]]
-	],
-	//Pressurized Reaction Chamber
-	<mekanism:machineblock2:10> : [
-		[[blockSteel, enrichedAlloy, blockSteel], [enrichedAlloy, electroCore, enrichedAlloy], [blockOsmium, blockOsmium, blockOsmium]]
-	],
-	//Seismic Vibrator
-	<mekanism:machineblock2:9> : [
-		[[blockTin, circuitBasic, blockTin], [circuitBasic, steelCasing, circuitBasic], [blockTin, circuitBasic, blockTin]]
-	],
-	//Chemical Dissolution Chamber
-	<mekanism:machineblock2:6> : [
-		[[circuitBasic, blockSteel, circuitBasic], [enrichedAlloy, atomicAlloy, enrichedAlloy], [circuitBasic, blockSteel, circuitBasic]]
-	],
-	//Factory Installer Advanced
-	<mekanism:tierinstaller:1> : [
-		[[alloyAdvanced, circuitAdvanced, alloyAdvanced], [blockOsmium, enrichedAlloy, blockOsmium], [alloyAdvanced, circuitAdvanced, alloyAdvanced]]
-	],
-	//Factory Installer Basic
-	<mekanism:tierinstaller> : [
-		[[blockRedstone, circuitBasic, blockRedstone], [blockSteel, enrichedAlloy, blockSteel], [blockRedstone, circuitBasic, blockRedstone]]
-	],
-	//Factory Installer Elite
-	<mekanism:tierinstaller:2> : [
-		[[alloyElite, circuitElite, alloyElite], [blockGold, enrichedAlloy, blockGold], [alloyElite, circuitElite, alloyElite]]
-	],
-	//Factory Installer Ultimiate
-	<mekanism:tierinstaller:3> : [
-		[[alloyUlt, circuitUlt, atomicAlloy], [blockDiamond, enrichedAlloy, blockDiamond], [alloyUlt, circuitUlt, alloyUlt]]
-	],
 	//Digital Miner
   <mekanism:machineblock:4> : [
 		[[atomicAlloy, circuitUlt, atomicAlloy], [blockDiamond, tripleCompSteel, blockDiamond], [tpCore, circuitUlt, tpCore]]
+	],
+	//Basic Universal Cable
+  <mekanism:transmitter>.withTag({tier: 0}) : [
+		[[ingotSteel, blockRedstone, ingotSteel], [blockGlassHard, blockGlassHard, blockGlassHard], [ingotSteel, blockRedstone, ingotSteel]]
 	],
 	//Rftools-----------------------------------------------
 	//RFTools Machine Frame
@@ -164,7 +99,7 @@ var shapedRecipes as IIngredient[][][][IItemStack] = {
 	],
 	//Lead Fluxduct
 	<thermaldynamics:duct_0> : [
-		[[blockRedstone, blockRedstone, blockRedstone], [blockLead, blockGlassHard, blockLead], [blockRedstone, blockRedstone, blockRedstone]]
+		[[conduitBinder, blockRedstone, conduitBinder], [blockLead, blockGlassHard, blockLead], [conduitBinder, blockRedstone, conduitBinder]]
 	],
 	//Electrum Fluxduct
 	<thermaldynamics:duct_0:6> : [
@@ -215,6 +150,10 @@ var shapedRecipes as IIngredient[][][][IItemStack] = {
 	<actuallyadditions:block_misc:9> : [
 		[[blockSteel, logWood, blockSteel], [logWood, blockBlackQuartz, logWood], [blockSteel, logWood, blockSteel]]
 	],
+	//Energy Laser
+	<actuallyadditions:block_laser_relay> : [
+		[[blockObsidian, blockRestonia, blockObsidian], [blockBlackQuartz, advancedCoil, blockBlackQuartz], [blockObsidian, blockRestonia, blockObsidian]]
+	],
 	//Tech Reborn--------------------------------
 	// Basic Machine Frame
 	<techreborn:machine_frame>: [
@@ -252,8 +191,40 @@ var shapedRecipes as IIngredient[][][][IItemStack] = {
 	//Ender Fluid Conduit
 	<enderio:item_liquid_conduit:2>: [
 		[[conduitBinder, conduitBinder, conduitBinder], [blockGlassHard, blockVibrantAlloy, blockGlassHard], [conduitBinder, conduitBinder, conduitBinder]]
+	],
+	//AE2 --------------------------------------------
+	//Quartz Fiber
+	<appliedenergistics2:part:140>: [
+		[[blockGlassHard, blockGlassHard, blockGlassHard], [blockQuartz, blockQuartz, blockQuartz], [blockGlassHard, blockGlassHard, blockGlassHard]]
+	],
+	//Glass Cable
+	<appliedenergistics2:part:16>: [
+		[[blockFluix, <appliedenergistics2:part:140>, null], [null, blockFluix, null], [null, null, null]]
+	],
+	//LP--------------------
+	//Unrouted
+	<logisticspipes:pipe_transport_basic>: [
+		[[ingotSteel, blockRedstone, ingotSteel], [blockGlassHard, null, blockGlassHard], [ingotSteel, blockRedstone, ingotSteel]]
+	],
+	//Integrated Dynamics--------------------
+	//logic cable
+	<integrateddynamics:cable>: [
+		[[blockMenril, blockRedstone, blockMenril], [blockGlassHard, blockSteel, blockGlassHard], [blockMenril, blockRedstone, blockMenril]]
+	],
+	//energy interface
+	<integratedtunnels:part_interface_energy_item>: [
+		[[blockMenril, blockSteel, blockMenril], [blockEnderPearl, <integrateddynamics:energy_battery>, blockEnderPearl], [blockMenril, blockSteel, blockMenril]]
+	],
+	//item interface
+	<integratedtunnels:part_interface_item_item>: [
+		[[blockMenril, blockSteel, blockMenril], [blockEnderPearl, chestWood, blockEnderPearl], [blockMenril, blockSteel, blockMenril]]
+	],
+	//fluid interface
+	<integratedtunnels:part_interface_fluid_item>: [
+		[[blockMenril, blockSteel, blockMenril], [blockEnderPearl, bucket, blockEnderPearl], [blockMenril, blockSteel, blockMenril]]
 	]
 };
+
 
 for item, recipesForItem in shapedRecipes {
 
