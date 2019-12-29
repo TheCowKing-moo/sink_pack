@@ -34,7 +34,7 @@ TODO
     * ~~Magnesium~~
     * ~~Uranium~~
     * ~~OW Silent Gems~~
-    * ~~Nehter Silent Gems~~
+    * ~~Nether Silent Gems~~
     * End Silent Gems
     * Any of TR's nether or end ores
    

@@ -7,27 +7,29 @@ import crafttweaker.oredict.IOreDictEntry;
 
 
 
-var flightItems = [
-  //Mekanism Jetpack
-  //Mantle of Stars
-  //All of Simply Jetpacks
-  //TR?
-  //Boatnia?
-  
+var flightItems as IIngredient[] = [
+  <mekanism:armoredjetpack>,
+  <mekanism:jetpack>,
+  <simplyjetpacks:itemjetpack:*>,
+  <rftools:flight_module>,
+  <silentgems:chaosrune>,
+  <simplyjetpacks:metaitemmods:6>,
+  <simplyjetpacks:metaitemmods:5>,
+  <openglider:hang_glider_basic>,
+  <openglider:hang_glider_advanced>,
+  <enderio:item_dark_steel_upgrade:1>,
+  <enderio:item_dark_steel_upgrade:1>,
+  <simplyjetpacks:metaitemmods:4>,
+  <openglider:hang_glider_part:1>,
+  <openglider:hang_glider_part>,
+  <enderio:item_material:6>
 ];
+
+
+
 
 for item in flightItems {
 
-	//get default recipe and store into temp as a List
-	var temp = recipes.getRecipesFor(item);
+  mods.recipestages.Recipes.setRecipeStage(STAGES.flight, item);
 
-	//remove recipe for item
-	recipes.remove(item);
-
-	//temp will be a list
-	for returnedrecipes in temp  {
-	  //adds to flight stage
-	    mods.recipestages.Recipes.addShaped(STAGES.flight, item, returnedrecipes.ingredients2D);
-	}  //end inner loop
-
-}  //end outer loop
+}
