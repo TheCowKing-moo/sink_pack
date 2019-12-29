@@ -1,3 +1,8 @@
+/*  The main purpose of this file is to let you convert a default recipe to a custom one using gamestages
+ *  
+ *  shapedRecipes 2D array contains the item being changed and then the recipe for the item in the custom gamestage
+ */
+
 
 import crafttweaker.item.IIngredient;
 import crafttweaker.item.IItemStack;
@@ -61,13 +66,18 @@ var blockBlackQuartz = <actuallyadditions:block_misc:2>;
 var ingotTin = <ore:ingotTin>;
 var grainInfinity = <enderio:item_material:20>;
 var barsIron = <ore:barsIron>;
-var conduitBinder = <enderio:item_item_conduit>;
+var conduitBinder = <enderio:item_material:4>;
 var blockPulsatingIron = <ore:blockPulsatingIron>;
 var blockConductiveIron = <ore:blockConductiveIron>;
 var blockEnergeticAlloy = <ore:blockEnergeticAlloy>;
 var blockVibrantAlloy = <ore:blockVibrantAlloy>;
 var ingotSteel = <ore:ingotSteel>;
 var tpCore = <mekanism:teleportationcore>;
+var blockCertusQuartz = <appliedenergistics2:quartz_block>;
+var logicProcessor = <appliedenergistics2:material:22>;
+var basicCoil = <actuallyadditions:item_misc:7>;
+var livingWood = <ore:livingwood>;
+
 
 //Any item in this array will be added to the kitchen gamestage, removed from default, then added to the heavy stage with the recipe listed
 var shapedRecipes as IIngredient[][][][IItemStack] = {
@@ -76,11 +86,15 @@ var shapedRecipes as IIngredient[][][][IItemStack] = {
 		[[blockSteel, blockGlass, blockSteel], [blockGlass, blockOsmium, blockGlass], [blockSteel, blockGlass, blockSteel]]
 	],
 	//Digital Miner
-  <mekanism:machineblock:4> : [
+    <mekanism:machineblock:4> : [
 		[[atomicAlloy, circuitUlt, atomicAlloy], [blockDiamond, tripleCompSteel, blockDiamond], [tpCore, circuitUlt, tpCore]]
 	],
+	//Infuser
+    <mekanism:machineblock:8> : [
+		[[blockSteel, furnace, blockSteel], [blockRedstone, blockOsmium, blockRedstone], [blockSteel, furnace, blockSteel]]
+	],
 	//Basic Universal Cable
-  <mekanism:transmitter>.withTag({tier: 0}) : [
+    <mekanism:transmitter>.withTag({tier: 0}) : [
 		[[ingotSteel, blockRedstone, ingotSteel], [blockGlassHard, blockGlassHard, blockGlassHard], [ingotSteel, blockRedstone, ingotSteel]]
 	],
 	//Rftools-----------------------------------------------
@@ -114,7 +128,7 @@ var shapedRecipes as IIngredient[][][][IItemStack] = {
 		[[null, null, null], [null, opDuct, null], [null, null, null]]
 	],
 	//Hard Kit
-  <thermalfoundation:upgrade>: [
+    <thermalfoundation:upgrade>: [
 		[[null, blockInvar, null], [blockInvar, gearBronze, blockInvar], [null, blockInvar, null]]
 	],
 	//rein Kit
@@ -154,6 +168,15 @@ var shapedRecipes as IIngredient[][][][IItemStack] = {
 	<actuallyadditions:block_laser_relay> : [
 		[[blockObsidian, blockRestonia, blockObsidian], [blockBlackQuartz, advancedCoil, blockBlackQuartz], [blockObsidian, blockRestonia, blockObsidian]]
 	],
+	//Basic Coil
+	<actuallyadditions:item_misc:7> : [
+		[[null, blockRestonia, null], [blockRestonia, blockBlackQuartz, blockRestonia], [null, blockRestonia, null]]
+	],
+	//Ranged Collector
+	<actuallyadditions:block_ranged_collector> : [
+		[[null, <minecraft:diamond>, null], [blockEnderPearl, <minecraft:hopper>, blockEnderPearl], [null, <actuallyadditions:block_misc:9>, null]]
+	],
+	
 	//Tech Reborn--------------------------------
 	// Basic Machine Frame
 	<techreborn:machine_frame>: [
@@ -201,6 +224,15 @@ var shapedRecipes as IIngredient[][][][IItemStack] = {
 	<appliedenergistics2:part:16>: [
 		[[blockFluix, <appliedenergistics2:part:140>, null], [null, blockFluix, null], [null, null, null]]
 	],
+	
+	//Energy Acceptor
+	<appliedenergistics2:energy_acceptor>: [
+		[[blockSteel, blockGlassHard, blockSteel], [blockGlassHard, blockFluix, blockGlassHard], [blockSteel, blockGlassHard, blockSteel]]
+	],
+	//1k
+	<appliedenergistics2:material:35>: [
+		[[blockRedstone, blockCertusQuartz, blockRedstone], [blockCertusQuartz, logicProcessor, blockCertusQuartz], [blockRedstone, blockCertusQuartz, blockRedstone]]
+	],
 	//LP--------------------
 	//Unrouted
 	<logisticspipes:pipe_transport_basic>: [
@@ -222,8 +254,15 @@ var shapedRecipes as IIngredient[][][][IItemStack] = {
 	//fluid interface
 	<integratedtunnels:part_interface_fluid_item>: [
 		[[blockMenril, blockSteel, blockMenril], [blockEnderPearl, bucket, blockEnderPearl], [blockMenril, blockSteel, blockMenril]]
+	],
+	//Botania--------------------------------
+	//Mana Spreader
+	<botania:spreader>: [
+		[[livingWood, livingWood, livingWood], [blockGold, <actuallyadditions:block_ranged_collector>, blockGold], [livingWood, livingWood, livingWood]]
 	]
 };
+
+
 
 
 for item, recipesForItem in shapedRecipes {
